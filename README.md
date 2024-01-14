@@ -1,7 +1,7 @@
 
 
-##  Python-flask-Deployment-Aws
-# python-flask: This is a python-flask project that shows the deployment of python flask on Aws, it further demonstrates the use of docker to build docker image, shows docker containnerisation.The Dockerfile was created to be able to build the flask_app docker image. Once built i ran the command below to show the numbers of docker images 
+## Python-flask-Deployment-Aws
+## python-flask: This is a python-flask project that shows the deployment of python flask on Aws, it further demonstrates the use of docker to build docker image, shows docker containnerisation.The Dockerfile was created to be able to build the flask_app docker image. Once built i ran the command below to show the numbers of docker images 
 available locally
 
 ##set up
@@ -16,7 +16,7 @@ Create the Dockerfile
 Create the docker-compose.yml file
 
 
-# first check if there are any local images  on your system, run the command below
+## first check if there are any local images  on your system, run the command below
 
 $docker images 
 
@@ -37,7 +37,7 @@ $ docker exec -it <imagename>  /bin/bash
 
 docker exec -it <containerID> /bin/bash
 
-#we are now inside the container
+## we are now inside the container
 
 root@61aff23db01e:/app# ls
 
@@ -52,33 +52,37 @@ Make sure you have docker-compose.yml file written
 
 $ docker-compose up -d
 
-# Now check if the container is build already
+## Now check if the container is build already
 
 $docker container ls
 
 
-# to run the container use the command below
+## to run the container use the command below
 
 $docker-compose logs
  $docker-compose logs -f
 
 =================================
 
-#=to remove docker images
+## To remove docker images
 
 sudo docker rmi  <imagename>
 
-# to force delete any image
+## to force delete any image
 
 $docker rmi -f  <imagename>
 
 $sudo rmi <imagename>
-# how to remove  container
+## how to remove  container
 
 
-# to. Remove the container
-Docker-compose down
+## To remove the container, run the command below
+$ docker-compose down
 
-# Or try using below command
+## Or try  removing the conatiners individually use the  below command
 
 $sudo docker rm -f <container ID>
+
+# To be sure it has removed the containers run the command
+
+ $ docker container ls

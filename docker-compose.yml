@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  flask:
+    build: 
+      context: .
+    image: flask_app  
+    restart: always
+    ports:
+      - 5002:5002
+    volumes:
+      - ./:/app  

@@ -1,18 +1,25 @@
 
 
 # # Python-flask-Deployment-Aws
-# # # python-flask: This is a python-flask project that shows the deployment of python flask on Aws, it further demonstrates the use of docker to build docker image, shows # # docker containnerisation.The Dockerfile was created to be able to build the flask_app docker image. Once built i ran the command below to show the numbers of docker images 
+python-flask: This is a python-flask project that shows the deployment of python flask on Aws, it further demonstrates the use of docker to build docker image, shows # # docker containnerisation.The Dockerfile was created to be able to build the flask_app docker image. Once built i ran the command below to show the numbers of docker images 
 available locally
 
 ## set up
 
 Create the project folder
+
 Create the application launch file app.py
+
 Create the templates folder to contain all the html files
+
 Create the requirement.txt continuing all the libraries for the project
+
 Create .dockerignore
+
 Create .gitignore
+
 Create the Dockerfile
+
 Create the docker-compose.yml file
 
 

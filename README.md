@@ -1,10 +1,10 @@
 
 
-## Python-flask-Deployment-Aws
-## python-flask: This is a python-flask project that shows the deployment of python flask on Aws, it further demonstrates the use of docker to build docker image, shows docker containnerisation.The Dockerfile was created to be able to build the flask_app docker image. Once built i ran the command below to show the numbers of docker images 
+# # Python-flask-Deployment-Aws
+# # # python-flask: This is a python-flask project that shows the deployment of python flask on Aws, it further demonstrates the use of docker to build docker image, shows # # docker containnerisation.The Dockerfile was created to be able to build the flask_app docker image. Once built i ran the command below to show the numbers of docker images 
 available locally
 
-##set up
+## set up
 
 Create the project folder
 Create the application launch file app.py
@@ -29,7 +29,11 @@ $docker run -p 5002:5002 <dockerimages>
 $docker container ls
 
 CONTAINER ID   IMAGE       COMMAND            CREATED         STATUS         PORTS                    NAMES
+
+
 b7e8a93a83c9   flask_app   "python3 app.py"   2 minutes ago   Up 2 minutes   0.0.0.0:5002->5002/tcp   stupefied_mirzakhani
+
+
 
 To access the container from the inside
 
@@ -83,6 +87,6 @@ $ docker-compose down
 
 $sudo docker rm -f <container ID>
 
-# To be sure it has removed the containers run the command
+## To be sure it has removed the containers run the command
 
  $ docker container ls
